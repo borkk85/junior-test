@@ -2,49 +2,9 @@
 // Go to Add page 
 
 document.getElementById('addBtn').onclick = function () {
-    location.href = 'product-add.php'
+    location.href = 'https://product-add.000webhostapp.com/product-add.php'
 }
 
-document.getElementById('cancelBtn').onclick = function () {
-    location.href = 'index.php'
-}
-
-// Dissapearing boxes
-
-
-// function removeCheckedCheckboxes() {
-    
-//     let boxes = document.querySelectorAll('.div-box');
-
-//     boxes.forEach((box) => {
-//         const checkBox = box.querySelector('.delete-checkbox');
-//         if (checkBox.checked == true) {
-//             box.style.display = 'none';
-//         }
-//     })
-// }
-
-const submit = document.getElementById("submit");
-
-submit.addEventListener('click', validate);
-
-function validate(e) {
-  e.preventDefault();
-
-  const firstSku = document.getElementById("sku");
-  let valid = true;
-
-  if (!firstSku.value) {
-    const nameError = document.getElementById("nameError");
-    nameError.classList.add("visible");
-    firstSku.classList.add("invalid");
-    nameError.setAttribute('aria-hidden', false);
-    nameError.setAttribute('aria-invalid', true);
-
-  }
-
-  return valid;
-}
 
 function selectChanged() {
     var sel = document.getElementById("productType");
