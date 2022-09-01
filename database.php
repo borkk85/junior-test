@@ -16,9 +16,5 @@ try {
     echo "Connection Failed" .$e->getMessage();
 }
 
-// $pdo = new PDO('mysql:host=localhost;port=3306;dbname=test', 'id19427212_bork', '123456');
-// $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-// return $pdo
 
 ?>
